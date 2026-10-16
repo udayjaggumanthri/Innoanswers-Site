@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a192f"/>
+      <stop offset="0.5" stop-color="#051329"/>
+      <stop offset="1" stop-color="#020914"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7fd4ff"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g1)"/>
+  <!-- Strategic grid matrix -->
+  <g stroke="rgba(127,212,255,0.12)" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="250" y1="0" x2="250" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="550" y1="0" x2="550" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+  </g>
+  <!-- Decision Nodes & Vectors -->
+  <path d="M150 320L320 220L480 270L650 140" stroke="url(#nodeGrad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M320 220L400 120L650 140" stroke="rgba(127,212,255,0.4)" stroke-width="2" stroke-dasharray="4,4"/>
+  <circle cx="150" cy="320" r="9" fill="#0284c7" stroke="#7fd4ff" stroke-width="3"/>
+  <circle cx="320" cy="220" r="11" fill="#051329" stroke="#7fd4ff" stroke-width="3"/>
+  <circle cx="480" cy="270" r="9" fill="#0284c7" stroke="#7fd4ff" stroke-width="3"/>
+  <circle cx="400" cy="120" r="7" fill="#051329" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="650" cy="140" r="14" fill="url(#nodeGrad)"/>
+  <circle cx="650" cy="140" r="24" stroke="#7fd4ff" stroke-opacity="0.3" stroke-width="2"/>
+</svg>

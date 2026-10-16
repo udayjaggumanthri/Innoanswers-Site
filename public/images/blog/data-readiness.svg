@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0e1f38"/>
+      <stop offset="0.6" stop-color="#071324"/>
+      <stop offset="1" stop-color="#020912"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg4)"/>
+  <!-- Stacked database cylinders / data maturity layers -->
+  <g transform="translate(400, 225)">
+    <!-- Base Layer -->
+    <ellipse cx="0" cy="80" rx="140" ry="32" fill="#08182f" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M-140 80V120C-140 138 -60 152 0 152C60 152 140 138 140 120V80" fill="#08182f" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Middle Layer -->
+    <ellipse cx="0" cy="10" rx="110" ry="26" fill="#0e284d" stroke="#7fd4ff" stroke-width="2"/>
+    <path d="M-110 10V45C-110 60 -50 71 0 71C50 71 110 60 110 45V10" fill="#0e284d" stroke="#7fd4ff" stroke-width="2"/>
+    <!-- Top Layer -->
+    <ellipse cx="0" cy="-60" rx="80" ry="20" fill="#1e3a66" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M-80 -60V-30C-80 -15 -35 -5 0 -5C35 -5 80 -15 80 -30V-60" fill="#1e3a66" stroke="#93c5fd" stroke-width="2"/>
+    <circle cx="0" cy="-60" r="8" fill="#7fd4ff"/>
+  </g>
+</svg>

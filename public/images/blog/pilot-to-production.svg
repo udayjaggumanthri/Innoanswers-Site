@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081b33"/>
+      <stop offset="0.6" stop-color="#041122"/>
+      <stop offset="1" stop-color="#010711"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <!-- Pipeline flow -->
+  <g stroke="rgba(56,189,248,0.2)" stroke-width="1.5">
+    <circle cx="400" cy="225" r="140" stroke-dasharray="6,6"/>
+    <circle cx="400" cy="225" r="90"/>
+    <circle cx="400" cy="225" r="40"/>
+  </g>
+  <path d="M120 225H260L320 180H480L540 225H680" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="230" y="200" width="60" height="50" rx="8" fill="#0c2340" stroke="#7fd4ff" stroke-width="2"/>
+  <rect x="510" y="200" width="60" height="50" rx="8" fill="#0c2340" stroke="#7fd4ff" stroke-width="2"/>
+  <circle cx="400" cy="225" r="18" fill="#7fd4ff"/>
+</svg>

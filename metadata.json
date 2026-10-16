@@ -1,0 +1,6 @@
+{
+  "name": "Innoanswers",
+  "description": "Solving tough problems with AI-driven solutions. AI expertise meets industry knowledge with no jargon — just results.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

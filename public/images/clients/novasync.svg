@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="currentColor">
+  <path d="M16 8L28 20L16 32L4 20Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="16" cy="20" r="3" fill="currentColor"/>
+  <text x="42" y="26" font-family="system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">NOVASYNC</text>
+</svg>

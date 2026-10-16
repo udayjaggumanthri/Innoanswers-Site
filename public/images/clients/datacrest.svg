@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="currentColor">
+  <path d="M8 30L8 10L18 10C24 10 28 14 28 20C28 26 24 30 18 30Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M14 16L18 16C21 16 23 18 23 20C23 22 21 24 18 24L14 24Z" fill="currentColor"/>
+  <text x="38" y="26" font-family="system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">DATACREST</text>
+</svg>

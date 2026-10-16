@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a1d2e"/>
+      <stop offset="0.6" stop-color="#05101a"/>
+      <stop offset="1" stop-color="#01060b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg5)"/>
+  <!-- Three overlapping architectural strategy spheres (Venn / Blend) -->
+  <g transform="translate(400, 225)">
+    <circle cx="-70" cy="-30" r="95" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="2"/>
+    <text x="-70" y="-30" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">BUILD</text>
+    <circle cx="70" cy="-30" r="95" fill="#0284c7" fill-opacity="0.25" stroke="#7fd4ff" stroke-width="2"/>
+    <text x="70" y="-30" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">BUY</text>
+    <circle cx="0" cy="70" r="95" fill="#0f766e" fill-opacity="0.25" stroke="#2dd4bf" stroke-width="2"/>
+    <text x="0" y="75" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">BLEND</text>
+    <circle cx="0" cy="5" r="14" fill="#ffffff"/>
+  </g>
+</svg>

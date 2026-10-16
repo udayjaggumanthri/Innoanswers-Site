@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="bg-alex" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f2b48"/>
+      <stop offset="1" stop-color="#051322"/>
+    </linearGradient>
+    <linearGradient id="accent-alex" x1="50" y1="50" x2="150" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7fd4ff"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="100" fill="url(#bg-alex)"/>
+  <circle cx="100" cy="72" r="32" fill="#e2e8f0"/>
+  <!-- Hair -->
+  <path d="M68 65C68 45 82 36 100 36C118 36 132 45 132 65C132 70 128 55 100 55C72 55 68 70 68 65Z" fill="#1e293b"/>
+  <!-- Shoulders / Suit -->
+  <path d="M42 165C42 128 68 116 100 116C132 116 158 128 158 165V200H42V165Z" fill="#1e293b"/>
+  <!-- Shirt collar -->
+  <path d="M88 116L100 136L112 116H88Z" fill="#ffffff"/>
+  <!-- Accent pin -->
+  <circle cx="135" cy="145" r="4" fill="url(#accent-alex)"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="bg-samira" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142838"/>
+      <stop offset="1" stop-color="#05121c"/>
+    </linearGradient>
+    <linearGradient id="accent-samira" x1="50" y1="50" x2="150" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="100" fill="url(#bg-samira)"/>
+  <circle cx="100" cy="74" r="30" fill="#f8fafc"/>
+  <!-- Hair: swept back bun -->
+  <path d="M64 74C64 45 80 34 100 34C120 34 136 45 136 74C136 88 128 100 124 106C122 86 126 52 100 52C74 52 78 86 76 106C72 100 64 88 64 74Z" fill="#0f172a"/>
+  <circle cx="100" cy="28" r="14" fill="#0f172a"/>
+  <!-- Blazer / Top -->
+  <path d="M42 166C42 128 68 116 100 116C132 116 158 128 158 166V200H42V166Z" fill="#0f172a"/>
+  <!-- Teal blouse -->
+  <path d="M85 116L100 138L115 116H85Z" fill="url(#accent-samira)"/>
+</svg>

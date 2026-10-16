@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#01061a" />
+    <title>Innoanswers — Solving tough problems with AI-driven solutions</title>
+    <meta name="description" content="AI expertise meets industry knowledge. Practical, outcome-focused AI solutions with no jargon — just results." />
+    
+    <!-- Google Fonts: Inter & Questrial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Questrial&display=swap" rel="stylesheet" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Innoanswers — Solving tough problems with AI-driven solutions" />
+    <meta property="og:description" content="AI expertise meets industry knowledge. Practical, outcome-focused AI solutions with no jargon — just results." />
+    <meta property="og:site_name" content="Innoanswers" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Innoanswers — Solving tough problems with AI-driven solutions" />
+    <meta name="twitter:description" content="AI expertise meets industry knowledge. Practical, outcome-focused AI solutions with no jargon — just results." />
+    
+    <!-- Pre-hydration hero intro and theme initialization script -->
+    <script>
+      (function() {
+        try {
+          // Initialize theme immediately to prevent layout shift and theme flicker
+          var savedTheme = localStorage.getItem('theme');
+          if (savedTheme === 'light') {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            document.documentElement.dataset.theme = 'light';
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.dataset.theme = 'dark';
+          }
+
+          var isHome = window.location.pathname === '/' || window.location.pathname === '' || window.location.hash.startsWith('#');
+          var hasWaapi = typeof Element !== 'undefined' && 'animate' in Element.prototype;
+          var hasMatchMedia = typeof window.matchMedia === 'function';
+          var prefersReducedMotion = hasMatchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          
+          if (isHome && hasWaapi && hasMatchMedia && !prefersReducedMotion) {
+            document.documentElement.classList.add('intro');
+            setTimeout(function() {
+              if (document.documentElement.dataset.intro !== 'running' && document.documentElement.dataset.intro !== 'done') {
+                document.documentElement.classList.remove('intro');
+              }
+            }, 3500);
+          }
+        } catch (e) {
+          // Graceful fallback
+        }
+      })();
+    </script>
+
+    <!-- Schema.org Organization structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Innoanswers",
+        "url": "https://innoanswers.com",
+        "description": "Solving tough problems with AI-driven solutions. AI expertise meets industry knowledge with no jargon — just results.",
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body class="bg-[var(--bg)] text-[var(--ink)] antialiased selection:bg-[#7fd4ff]/30 selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
