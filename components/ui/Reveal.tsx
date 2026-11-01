@@ -45,8 +45,8 @@ export function Reveal({
         });
       },
       {
-        threshold: 0.12,
-        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.08,
+        rootMargin: "0px 0px -40px 0px",
       }
     );
 
@@ -91,8 +91,10 @@ export function Reveal({
   return (
     <Component
       ref={ref}
-      className={`transition-all duration-800 ease-[cubic-bezier(0.16,1,0.3,1)] will-change-[transform,opacity] ${getVariantStyles()} ${className}`}
+      className={`transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] will-change-[transform,opacity] ${getVariantStyles()} ${className}`}
       style={{
+        transitionDuration: "700ms",
+        transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
         transitionDelay: isVisible ? `${delayMs}ms` : "0ms",
       }}
     >

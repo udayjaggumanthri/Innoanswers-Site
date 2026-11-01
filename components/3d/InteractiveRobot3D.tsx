@@ -773,7 +773,7 @@ export function InteractiveRobot3D({ className }: InteractiveRobot3DProps = {}) 
       className={`relative mx-auto w-full select-none cursor-default transition-transform duration-300 ${
         className || "h-[460px] sm:h-[520px] lg:h-[580px]"
       }`}
-      title="Innoanswers AI Companion — Tracks your cursor & head position in real time"
+      title="iNNOAnswers AI Companion — Tracks your cursor & head position in real time"
     />
   );
 }

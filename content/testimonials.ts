@@ -21,7 +21,7 @@ export const testimonialsContent: TestimonialsContent = {
   items: [
     {
       id: "t1",
-      quote: "Innoanswers took a messy operational problem and turned it into a working solution: no buzzwords, just a clear plan and steady delivery.",
+      quote: "iNNOAnswers took a messy operational problem and turned it into a working solution: no buzzwords, just a clear plan and steady delivery.",
       authorName: "Elena Vance",
       role: "Head of Operations",
       company: "Aerovance Logistics",

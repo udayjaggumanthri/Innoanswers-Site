@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Check, ArrowRight, Sparkles, Shield, Clock, Zap } from "lucide-react";
+import { Check, ArrowRight, Sparkles, Clock, Zap } from "lucide-react";
 import { Container } from "../ui/Container";
 import { Reveal } from "../ui/Reveal";
 import { ThreeDCard } from "../3d/ThreeDCard";
@@ -83,7 +83,10 @@ export function PricingSection() {
   const [billingPeriod, setBillingPeriod] = useState<"project" | "retainer">("project");
 
   return (
-    <section id="pricing" className="bg-[var(--bg)] py-14 sm:py-16 lg:py-20 border-b border-[var(--border-subtle)] relative overflow-hidden">
+    <section
+      id="pricing"
+      className="bg-[var(--bg)] py-16 sm:py-20 lg:py-24 border-b border-[var(--border-subtle)] relative overflow-hidden scroll-mt-24 sm:scroll-mt-28"
+    >
       <Container className="relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-[800px] mx-auto space-y-4">
@@ -194,35 +197,8 @@ export function PricingSection() {
             </Reveal>
           ))}
         </div>
-
-        {/* Enterprise Security & Guarantee Strip with 3D Depth */}
-        <Reveal delayMs={360} className="mt-12">
-          <ThreeDCard className="rounded-2xl" maxTilt={4} scale={1.01}>
-            <div className="rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface)] p-6 sm:p-7 flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--surface-hover)] text-[var(--accent)] border border-[var(--border-subtle)] shadow-sm">
-                  <Shield className="h-6 w-6" />
-                </div>
-                <div>
-                  <h4 className="text-base font-semibold text-[var(--ink)]">
-                    Need a custom enterprise MSA or on-premise sovereign deployment?
-                  </h4>
-                  <p className="text-xs sm:text-sm text-[var(--muted-text)] mt-0.5">
-                    We accommodate custom security questionnaires, BAA/HIPAA compliance, and dedicated engineering pods.
-                  </p>
-                </div>
-              </div>
-
-              <a
-                href="/contact?type=custom"
-                className="inline-flex h-10 px-5 shrink-0 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--surface-hover)] text-xs font-semibold text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all"
-              >
-                Request Custom Enterprise Proposal →
-              </a>
-            </div>
-          </ThreeDCard>
-        </Reveal>
       </Container>
     </section>
   );
 }
+

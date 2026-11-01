@@ -8,7 +8,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden py-14 sm:py-18 lg:py-22 bg-[var(--bg-alt)] border-b border-[var(--border-subtle)]"
+      className="relative overflow-hidden py-16 sm:py-20 lg:py-24 bg-[var(--bg-alt)] border-b border-[var(--border-subtle)] scroll-mt-24 sm:scroll-mt-28"
     >
       <Container>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-center">
@@ -17,7 +17,7 @@ export function AboutSection() {
             <Reveal>
               <div className="eyebrow">
                 <span className="uppercase tracking-wider font-semibold text-xs">
-                  ABOUT INNOANSWERS
+                  ABOUT iNNOAnswers
                 </span>
                 <span className="opacity-30">·</span>
                 <span className="font-medium text-xs text-[var(--muted-text)]">
@@ -37,7 +37,7 @@ export function AboutSection() {
             <Reveal delayMs={130}>
               <div className="space-y-4 text-base sm:text-lg text-[var(--body-text)] leading-relaxed font-normal">
                 <p>
-                  Innoanswers partners with forward-thinking organizations to design, build, and deploy production-grade software and machine learning systems. We reject speculative hype in favor of measurable business ROI, hardened architectural reliability, and zero jargon.
+                  iNNOAnswers partners with forward-thinking organizations to design, build, and deploy production-grade software and machine learning systems. We reject speculative hype in favor of measurable business ROI, hardened architectural reliability, and zero jargon.
                 </p>
                 <p className="text-sm sm:text-base text-[var(--muted-text)]">
                   Every engagement is delivered with 100% intellectual property ownership, dedicated code handover, and private deployment inside your sovereign cloud or on-premise infrastructure.
@@ -107,7 +107,7 @@ export function AboutSection() {
             <Reveal delayMs={160}>
               <CinematicImage
                 src="/images/about/team-collab.jpg"
-                alt="Innoanswers engineering team in architectural design session"
+                alt="iNNOAnswers engineering team in architectural design session"
                 aspectRatio="aspect-[4/3] sm:aspect-[16/11]"
                 threshold={0.15}
               />

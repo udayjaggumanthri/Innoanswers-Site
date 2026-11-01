@@ -40,14 +40,12 @@ const servicesList: ServiceItem[] = [
     link: "/services/technology",
     iconType: "technology",
     phonePreview: {
-      bannerTitle: "TECH CORE",
+      bannerTitle: "TECHNOLOGY",
       subheading: "Production AI Infrastructure",
       description:
         "Models built around your proprietary data and workflows, from high-throughput predictive APIs to enterprise RAG pipelines.",
       badge1: "Sub-20ms Inference",
       badge2: "Private VPC 24/7",
-      metric: "99.95%",
-      metricLabel: "Production SLA",
     },
   },
   {
@@ -65,8 +63,6 @@ const servicesList: ServiceItem[] = [
         "Take repetitive, rules-heavy document processing and manual triage off your team's plate with verifiable precision.",
       badge1: "Zero Friction",
       badge2: "Continuous Sync",
-      metric: "85%",
-      metricLabel: "Operational Time Saved",
     },
   },
   {
@@ -83,9 +79,7 @@ const servicesList: ServiceItem[] = [
       description:
         "Find the real enterprise bottlenecks worth solving with an honest feasibility audit — zero hype, no vendor lock-in.",
       badge1: "Feasibility Audit",
-      badge2: "100% IP Retained",
-      metric: "Zero",
-      metricLabel: "Proprietary Lock-in",
+      badge2: "Full IP Retained",
     },
   },
 ];
@@ -126,7 +120,7 @@ export function ServicesSection() {
     <section
       ref={sectionRef}
       id="services"
-      className="relative overflow-hidden py-14 sm:py-18 lg:py-22 bg-[var(--bg)] border-b border-[var(--border-subtle)]"
+      className="relative overflow-hidden py-16 sm:py-20 lg:py-24 bg-[var(--bg)] border-b border-[var(--border-subtle)] scroll-mt-24 sm:scroll-mt-28"
     >
       <Container>
         {/* Master Card Container: Dark Blue for BOTH Light and Dark themes per user instruction */}
@@ -246,7 +240,7 @@ export function ServicesSection() {
                           {service.description}
                         </p>
 
-                        {/* On mobile/tablet: Show active telemetry pills */}
+                        {/* On mobile/tablet: Show active feature badges */}
                         {isActive && (
                           <div className="mt-2.5 flex flex-wrap items-center gap-1.5 lg:hidden pt-2 border-t border-white/15">
                             <span className="inline-flex items-center px-2 py-0.5 rounded bg-white/20 text-[10px] font-semibold text-white">
@@ -254,9 +248,6 @@ export function ServicesSection() {
                             </span>
                             <span className="inline-flex items-center px-2 py-0.5 rounded bg-white/20 text-[10px] font-semibold text-white">
                               {service.phonePreview.badge2}
-                            </span>
-                            <span className="inline-flex items-center px-2 py-0.5 rounded bg-white/30 text-[10px] font-bold text-sky-200">
-                              {service.phonePreview.metric} {service.phonePreview.metricLabel}
                             </span>
                           </div>
                         )}
@@ -346,14 +337,6 @@ export function ServicesSection() {
                         <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-blue-600 text-white font-bold text-[9px] shadow-sm">
                           <span>Explore Offering</span>
                           <ArrowRight className="w-2.5 h-2.5" />
-                        </span>
-                      </div>
-
-                      {/* Bottom Micro Metrics */}
-                      <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-slate-400 font-mono text-[9px]">
-                        <span className="font-bold text-slate-500">IA·CORE</span>
-                        <span className="font-bold text-blue-700">
-                          {activeService.phonePreview.metric}
                         </span>
                       </div>
                     </div>

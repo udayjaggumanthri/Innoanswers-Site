@@ -10,7 +10,7 @@ import { CinematicImage } from "../../components/ui/CinematicImage";
 
 export const metadata = {
   title: "Blogs",
-  description: "Plain-English thinking on AI, data, and getting real results from Innoanswers.",
+  description: "Plain-English thinking on AI, data, and getting real results from iNNOAnswers.",
 };
 
 export default function BlogsPage() {

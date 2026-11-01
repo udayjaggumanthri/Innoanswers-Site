@@ -4,8 +4,8 @@
   --u: min(100vw / 1440, 1.2px);
   position: relative;
   height: auto;
-  min-height: 520px;
-  padding-bottom: 60px;
+  min-height: 600px;
+  padding-bottom: 40px;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font);
@@ -22,8 +22,8 @@ html[data-theme="light"] .footer.driftbar-footer {
   --ink: #0f172a;
   --body: #334155;
   --muted: #64748b;
-  --wordmark-color: rgba(15, 23, 42, 0.06);
-  --mist: #ffffff;
+  --wordmark-color: rgba(255, 255, 255, 0.2);
+  --mist: transparent;
   --chip-bg: #f1f5f9;
   --chip-border: #e2e8f0;
   --chip-color: #0f172a;
@@ -102,61 +102,65 @@ html[data-theme="dark"] .driftbar-footer .footer__video {
   );
 }
 
-/* Giant Frosted Glass Wordmark */
+/* Giant Frosted Glass Wordmark - Prominent, Monumental & Atmospheric */
 .driftbar-footer .footer__wordmark {
   position: absolute;
   left: 50%;
-  bottom: calc(-2 * var(--u));
+  bottom: 0;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
   margin: 0;
-  font-size: calc(275 * var(--u));
-  font-weight: 700;
+  font-size: clamp(100px, 17.5vw, 250px);
+  font-weight: 800;
   line-height: 0.74;
   letter-spacing: -0.04em;
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
-  color: var(--wordmark-color);
+  opacity: 0.75;
+  color: #ffffff;
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.45),
-    rgba(127, 212, 255, 0.15) 48%,
-    rgba(255, 255, 255, 0.25)
+    rgba(255, 255, 255, 0.75) 0%,
+    rgba(127, 212, 255, 0.40) 48%,
+    rgba(255, 255, 255, 0.18) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 calc(-1 * var(--u)) 0 rgba(255, 255, 255, 0.2))
-    drop-shadow(0 0 calc(24 * var(--u)) rgba(127, 212, 255, 0.2));
+  filter: drop-shadow(0 calc(-1 * var(--u)) 0 rgba(255, 255, 255, 0.35))
+    drop-shadow(0 0 calc(24 * var(--u)) rgba(127, 212, 255, 0.35))
+    drop-shadow(0 4px 18px rgba(0, 0, 0, 0.55));
 }
 
 :root:not(.dark) .driftbar-footer .footer__wordmark,
 html[data-theme="light"] .driftbar-footer .footer__wordmark {
+  opacity: 0.8;
   background: linear-gradient(
     to bottom,
-    rgb(255 255 255 / 0.85),
-    rgb(214 218 246 / 0.42) 48%,
-    rgb(255 255 255 / 0.65)
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(195, 220, 255, 0.65) 48%,
+    rgba(255, 255, 255, 0.30) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 calc(-1 * var(--u)) 0 rgb(255 255 255 / 0.55))
-    drop-shadow(0 0 calc(18 * var(--u)) rgb(190 200 255 / 0.35));
+  filter: drop-shadow(0 calc(-1 * var(--u)) 0 rgba(255, 255, 255, 0.75))
+    drop-shadow(0 0 calc(20 * var(--u)) rgba(190, 215, 255, 0.45))
+    drop-shadow(0 4px 16px rgba(15, 23, 42, 0.4));
 }
 
 /* Atmospheric Fog Layer */
 .driftbar-footer .footer__fog {
   position: absolute;
   inset: auto 0 0;
-  z-index: 2;
-  height: 20%;
+  z-index: 1;
+  height: 10%;
   pointer-events: none;
+  opacity: 0.2;
   background: linear-gradient(
     to top,
     var(--mist) 0%,
-    color-mix(in srgb, var(--mist) 65%, transparent) 35%,
     transparent 100%
   );
 }
@@ -319,26 +323,34 @@ html[data-theme="light"] .driftbar-footer .footer__wordmark {
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer.driftbar-footer {
     --u: min(100vw / 1040, 100svh / 672);
+    min-height: 560px;
+    padding-bottom: 40px;
   }
   .driftbar-footer .footer__content {
     grid-template-columns: repeat(2, 1fr);
-    gap: calc(24 * var(--u));
+    gap: 36px;
     width: 100%;
-    padding: calc(40 * var(--u)) calc(30 * var(--u)) 0;
+    padding: 40px 32px 0;
   }
   .driftbar-footer .brand {
     grid-column: 1 / -1;
   }
   .driftbar-footer .brand__text {
-    max-width: calc(320 * var(--u));
+    max-width: 36em;
   }
   .driftbar-footer .footer__wordmark {
-    font-size: calc(210 * var(--u));
-    bottom: calc(10 * var(--u));
+    font-size: clamp(55px, 12vw, 110px);
+    bottom: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .driftbar-footer .footer__bottom {
+    margin: 36px auto 0;
+    padding: 18px 32px;
   }
 }
 
-/* Mobile (≤767px) */
+/* Mobile (≤767px) - Clean, Uncluttered, Elegant Vertical Flow */
 @media (max-width: 767px) {
   .footer.driftbar-footer {
     --u: 1px;
@@ -346,63 +358,156 @@ html[data-theme="light"] .driftbar-footer .footer__wordmark {
     min-height: auto;
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
+    padding-bottom: 24px;
+    position: relative;
   }
+
   .driftbar-footer .footer__stage::after {
     background: linear-gradient(
       to bottom,
       var(--paper) 0%,
-      color-mix(in srgb, var(--paper) 95%, transparent) 50%,
-      color-mix(in srgb, var(--paper) 80%, transparent) 68%,
-      transparent 90%
+      color-mix(in srgb, var(--paper) 92%, transparent) 40%,
+      color-mix(in srgb, var(--paper) 70%, transparent) 65%,
+      transparent 88%
     );
   }
+
+  /* Vertical Stacking for Mobile - Eliminates cramped side-by-side columns */
   .driftbar-footer .footer__content {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    justify-content: space-between;
-    column-gap: 16px;
-    row-gap: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     width: 100%;
-    padding: 36px 20px 0;
-    margin-bottom: 24px;
+    padding: 36px 24px 0;
+    margin-bottom: 12px;
   }
+
+  /* 1. Brand Column */
   .driftbar-footer .brand {
-    grid-column: 1 / -1;
+    width: 100%;
+  }
+  .driftbar-footer .brand__logo {
+    display: inline-flex;
+    align-items: center;
+  }
+  .driftbar-footer .brand__subheading {
+    margin-top: 10px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
   }
   .driftbar-footer .brand__title {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.25;
+    margin-top: 8px;
   }
   .driftbar-footer .brand__text {
-    max-width: 32em;
+    max-width: 100%;
     font-size: 14px;
+    line-height: 1.55;
+    margin-top: 10px;
   }
   .driftbar-footer .brand__cta {
-    height: 38px;
-    padding: 0 18px;
-    border-radius: 8px;
-    font-size: 13px;
+    display: inline-flex;
+    height: 42px;
+    padding: 0 22px;
+    font-size: 13.5px;
+    margin-top: 18px;
+    border-radius: 9999px;
   }
-  .driftbar-footer .brand__cta svg {
-    width: 14px;
-    height: 14px;
-  }
-  .driftbar-footer .brand__copy {
-    font-size: 12.5px;
+
+  /* 2. Site Links Column - Full Width with Generous 2-Column Grid */
+  .driftbar-footer .col {
+    width: 100%;
   }
   .driftbar-footer .col__title {
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
-  .driftbar-footer .col__list {
-    gap: 12px;
+  :root:not(.dark) .driftbar-footer .col__title,
+  html[data-theme="light"] .driftbar-footer .col__title {
+    border-bottom-color: rgba(15, 23, 42, 0.1);
+  }
+
+  .driftbar-footer .col__list--two-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+    row-gap: 12px;
     margin-top: 16px;
-    font-size: 13px;
+    font-size: 14px;
   }
+
+  .driftbar-footer .col__list a {
+    display: inline-block;
+    padding: 3px 0;
+    line-height: 1.35;
+  }
+
+  /* 3. Contact Details Column - Full Width, Crisp Rows with Aligned Icons */
+  .driftbar-footer .col--contact {
+    width: 100%;
+  }
+  .driftbar-footer .col--contact .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .driftbar-footer .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+  .driftbar-footer .contact-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  /* 4. Wordmark - Scaled & Centered, Zero Horizontal Overflow */
   .driftbar-footer .footer__wordmark {
-    bottom: 4vw;
-    font-size: 21vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 56px;
+    font-size: clamp(32px, 10vw, 54px);
+    line-height: 1;
+    white-space: nowrap;
+    opacity: 0.28;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+    filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.5));
   }
+
   .driftbar-footer .footer__fog {
-    height: 10%;
+    height: 8%;
+  }
+
+  /* 5. Clean, Centered Bottom Copyright Bar */
+  .driftbar-footer .footer__bottom {
+    margin: 32px 20px 0;
+    padding: 16px 0 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  :root:not(.dark) .driftbar-footer .footer__bottom,
+  html[data-theme="light"] .driftbar-footer .footer__bottom {
+    border-top-color: rgba(15, 23, 42, 0.12);
+  }
+
+  .driftbar-footer .footer__copy {
+    font-size: 12.5px;
+    text-align: center;
   }
 }
 
@@ -413,3 +518,39 @@ html[data-theme="light"] .driftbar-footer .footer__wordmark {
     transition: none !important;
   }
 }
+
+/* Dedicated High-Contrast Bottom Bar - Clean Copyright (Desktop Base) */
+.driftbar-footer .footer__bottom {
+  position: relative;
+  z-index: 10;
+  max-width: 1240px;
+  width: 100%;
+  margin: 40px auto 0;
+  padding: 20px 32px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+:root:not(.dark) .driftbar-footer .footer__bottom,
+html[data-theme="light"] .driftbar-footer .footer__bottom {
+  border-top-color: rgba(255, 255, 255, 0.22);
+}
+
+.driftbar-footer .footer__copy {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  opacity: 0.95;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+:root:not(.dark) .driftbar-footer .footer__copy,
+html[data-theme="light"] .driftbar-footer .footer__copy {
+  color: #0f172a;
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.9);
+}
+

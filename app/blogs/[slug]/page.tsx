@@ -30,14 +30,14 @@ export function generateMetadata({ params }: BlogPostPageProps) {
     title: post.title,
     description: post.excerpt,
     openGraph: {
-      title: `${post.title} | Innoanswers`,
+      title: `${post.title} | iNNOAnswers`,
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | Innoanswers`,
+      title: `${post.title} | iNNOAnswers`,
       description: post.excerpt,
     },
   };

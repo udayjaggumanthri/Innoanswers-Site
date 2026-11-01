@@ -130,7 +130,7 @@ export const servicesContent: ServicesContent = {
       answer: "We start with the problem, not the technology. Early on we evaluate your bottlenecks honestly to determine whether machine learning is genuinely suited or if deterministic software rules achieve better speed and lower maintenance costs.",
     },
     {
-      question: "What does working with Innoanswers look like?",
+      question: "What does working with iNNOAnswers look like?",
       answer: "We begin with a focused scoping sprint to understand your architecture, data constraints, and success metrics. We build in visible 2-week iterations and perform complete code, model weights, and documentation handover with dedicated production SLA support.",
     },
     {

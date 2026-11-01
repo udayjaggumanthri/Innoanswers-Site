@@ -5,7 +5,7 @@ import { Reveal } from "../ui/Reveal";
 
 export function CtaBand() {
   return (
-    <section className="relative overflow-hidden py-14 sm:py-16 lg:py-20 bg-[var(--bg)] border-b border-[var(--border-subtle)]">
+    <section className="relative overflow-hidden py-16 sm:py-20 lg:py-24 bg-[var(--bg)] border-b border-[var(--border-subtle)]">
       <Container>
         <Reveal>
           <div className="relative rounded-3xl overflow-hidden border border-slate-800 bg-[#090e24] p-8 sm:p-12 lg:p-14 text-center shadow-xl">

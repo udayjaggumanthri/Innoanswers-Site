@@ -7,7 +7,6 @@ import {
   GraduationCap,
   Zap,
   Radio,
-  ArrowRight,
 } from "lucide-react";
 import { industriesContent, Industry } from "../../content/industries";
 import { Container } from "../ui/Container";
@@ -39,7 +38,10 @@ function getIndustryIcon(iconName: Industry["iconName"]) {
 
 export function IndustriesSection() {
   return (
-    <section id="industries" className="bg-[var(--bg-alt)] py-14 sm:py-16 lg:py-20 border-t border-[var(--border-subtle)] relative">
+    <section
+      id="industries"
+      className="bg-[var(--bg-alt)] py-16 sm:py-20 lg:py-24 border-t border-[var(--border-subtle)] relative scroll-mt-24 sm:scroll-mt-28"
+    >
       <Container>
         {/* Section Header */}
         <div className="max-w-[800px] space-y-4">
@@ -64,24 +66,17 @@ export function IndustriesSection() {
         <div className="mt-10 sm:mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {industriesContent.industries.map((ind, idx) => (
             <Reveal key={ind.id} delayMs={(idx % 4) * 80} className="flex">
-              <ThreeDCard className="w-full h-full rounded-2xl" maxTilt={7} scale={1.02}>
-                <Card className="group flex flex-col justify-between p-6 sm:p-7 w-full h-full border border-[var(--border-subtle)] transition-all duration-300 hover:border-[var(--accent)]/60 hover:shadow-lg cursor-default">
-                  <div>
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--surface-hover)] border border-[var(--border-subtle)] transition-colors duration-200 group-hover:bg-[rgba(127,212,255,0.15)] shadow-sm">
-                      {getIndustryIcon(ind.iconName)}
-                    </div>
-                    <h3 className="card-h3 mt-5 text-[18px] text-[var(--ink)] group-hover:text-[var(--accent)] transition-colors duration-200">
-                      {ind.name}
-                    </h3>
-                    <p className="mt-2.5 text-[14px] leading-relaxed text-[var(--body-text)]">
-                      {ind.description}
-                    </p>
+              <ThreeDCard className="w-full h-full rounded-2xl" maxTilt={6} scale={1.02}>
+                <Card className="group flex flex-col p-6 sm:p-7 w-full h-full border border-[var(--border-subtle)] transition-all duration-300 hover:border-[var(--accent)]/60 hover:shadow-lg cursor-default">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--surface-hover)] border border-[var(--border-subtle)] transition-colors duration-200 group-hover:bg-[rgba(127,212,255,0.15)] shadow-sm">
+                    {getIndustryIcon(ind.iconName)}
                   </div>
-
-                  <div className="mt-6 pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between text-xs font-medium text-[var(--muted-text)] group-hover:text-[var(--accent)] transition-colors duration-200">
-                    <span>Custom ML architecture</span>
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </div>
+                  <h3 className="card-h3 mt-5 text-[18px] font-bold text-[var(--ink)] group-hover:text-[var(--accent)] transition-colors duration-200 tracking-tight">
+                    {ind.name}
+                  </h3>
+                  <p className="mt-2.5 text-[14px] leading-relaxed text-[var(--body-text)]">
+                    {ind.description}
+                  </p>
                 </Card>
               </ThreeDCard>
             </Reveal>

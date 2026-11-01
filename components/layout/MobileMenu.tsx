@@ -12,7 +12,7 @@ import {
   Briefcase,
   Compass,
 } from "lucide-react";
-import { Wordmark } from "../hero/Wordmark";
+import { BrandLogo } from "../ui/BrandLogo";
 import { ThemeToggle } from "../ui/ThemeToggle";
 import { siteConfig } from "../../content/site";
 
@@ -171,17 +171,14 @@ export function MobileMenu({ isOpen, onClose, currentPath }: MobileMenuProps) {
         }`}
       >
         {/* Drawer Header */}
-        <div className="flex h-18 items-center justify-between px-6 border-b border-[var(--border-subtle)] bg-[var(--surface)] shrink-0">
+        <div className="flex h-20 items-center justify-between px-6 border-b border-[var(--border-subtle)] bg-[var(--surface)] shrink-0">
           <a
             href="/"
             onClick={onClose}
-            aria-label="Innoanswers home"
-            className="flex items-center gap-2.5 text-[var(--ink)]"
+            aria-label="iNNOAnswers home"
+            className="inline-flex items-center"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600 text-white font-bold text-sm shadow-sm">
-              <span>IA</span>
-            </div>
-            <Wordmark heightPx={20} />
+            <BrandLogo className="brand-logo-drawer" alt="iNNOAnswers" />
           </a>
 
           <div className="flex items-center gap-2">
@@ -302,7 +299,7 @@ export function MobileMenu({ isOpen, onClose, currentPath }: MobileMenuProps) {
         {/* Drawer Footer with Direct Contact Details */}
         <div className="border-t border-[var(--border-subtle)] p-6 bg-[var(--surface-hover)] shrink-0 space-y-2 text-xs text-[var(--muted-text)]">
           <div className="flex items-center justify-between">
-            <span className="font-semibold text-[var(--ink)]">Innoanswers Inc.</span>
+            <span className="font-semibold text-[var(--ink)]">iNNOAnswers Inc.</span>
             <div className="flex items-center gap-1.5 text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
               <span>Pods Online</span>

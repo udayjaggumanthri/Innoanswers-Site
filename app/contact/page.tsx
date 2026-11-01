@@ -10,7 +10,7 @@ import { ThreeDCard } from "../../components/3d/ThreeDCard";
 
 export const metadata = {
   title: "Contact Us",
-  description: "Get in touch with Innoanswers to discuss your business bottlenecks and find out if AI is the right tool.",
+  description: "Get in touch with iNNOAnswers to discuss your business bottlenecks and find out if AI is the right tool.",
 };
 
 export default function ContactPage() {

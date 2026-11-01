@@ -11,7 +11,7 @@ import { CinematicImage } from "../../components/ui/CinematicImage";
 
 export const metadata = {
   title: "Services",
-  description: "Explore Innoanswers AI technology services, business automation, and strategic advisory offerings designed for measurable business outcomes.",
+  description: "Explore iNNOAnswers AI technology services, business automation, and strategic advisory offerings designed for measurable business outcomes.",
 };
 
 function getSectionIcon(iconName: ServiceCategory["iconName"]) {

@@ -4,9 +4,9 @@ import { Container } from "../../components/ui/Container";
 import { Reveal } from "../../components/ui/Reveal";
 
 export const metadata = {
-  title: "Privacy Policy — Innoanswers Inc.",
+  title: "Privacy Policy — iNNOAnswers Inc.",
   description:
-    "Learn how Innoanswers protects enterprise data sovereignty, private VPC deployments, and confidential information across all AI and software engineering engagements.",
+    "Learn how iNNOAnswers protects enterprise data sovereignty, private VPC deployments, and confidential information across all AI and software engineering engagements.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
                   Enterprise Data Sovereignty Guarantee
                 </h2>
                 <p className="text-xs sm:text-sm text-[var(--body-text)]">
-                  Innoanswers builds machine learning models and automation engines that run strictly inside your organization’s private cloud VPC or on-premise infrastructure. We do not aggregate, sell, or utilize client training data for third-party model tuning.
+                  iNNOAnswers builds machine learning models and automation engines that run strictly inside your organization’s private cloud VPC or on-premise infrastructure. We do not aggregate, sell, or utilize client training data for third-party model tuning.
                 </p>
               </div>
             </Reveal>
@@ -111,7 +111,7 @@ export default function PrivacyPolicyPage() {
                   4. Security &amp; Encryption Standards
                 </h2>
                 <p>
-                  Innoanswers maintains enterprise-grade security posture across all operations:
+                  iNNOAnswers maintains enterprise-grade security posture across all operations:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-sm">
                   <li><strong>In-Transit:</strong> TLS 1.3 encryption across all website and API communications.</li>
@@ -131,7 +131,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="p-5 rounded-xl border border-[var(--border-subtle)] bg-[var(--surface)] text-xs sm:text-sm space-y-1 font-mono">
                   <p className="font-bold text-[var(--ink)] font-sans">Data Protection &amp; Legal Compliance Office</p>
-                  <p>Innoanswers Inc.</p>
+                  <p>iNNOAnswers Inc.</p>
                   <p>Email: legal@innoanswers.com</p>
                   <p>Phone: +1 (800) 555-0199</p>
                   <p>Address: 100 Enterprise Way, Suite 400, San Francisco, CA 94105</p>

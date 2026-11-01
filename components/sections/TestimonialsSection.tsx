@@ -7,7 +7,10 @@ import { ThreeDCard } from "../3d/ThreeDCard";
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonials" className="bg-[var(--bg-alt)] py-12 sm:py-16 lg:py-18 border-t border-[var(--border-subtle)] relative">
+    <section
+      id="testimonials"
+      className="bg-[var(--bg-alt)] py-16 sm:py-20 lg:py-24 border-t border-[var(--border-subtle)] relative scroll-mt-24 sm:scroll-mt-28"
+    >
       <Container>
         <div className="max-w-[800px] space-y-4">
           <Reveal>

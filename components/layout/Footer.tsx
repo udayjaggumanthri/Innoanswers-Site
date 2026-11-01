@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, Mail, Phone, MapPin, Clock } from "lucide-react";
+import { BrandLogo } from "../ui/BrandLogo";
 import "./driftbar.css";
 
 export function Footer() {
@@ -21,7 +22,7 @@ export function Footer() {
 
       {/* 2. Frosted Glass Giant Wordmark */}
       <p className="footer__wordmark" aria-hidden="true">
-        Innoanswers
+        iNNOAnswers
       </p>
 
       {/* 3. Atmospheric Fog Layer */}
@@ -31,9 +32,8 @@ export function Footer() {
       <div className="footer__content">
         {/* Column 1: Company / Brand Info */}
         <div className="brand">
-          <a className="brand__logo" href="/" aria-label="Innoanswers home">
-            <span className="brand__mark">IA</span>
-            <span>Innoanswers</span>
+          <a className="brand__logo group inline-flex items-center" href="/" aria-label="iNNOAnswers home">
+            <BrandLogo className="brand-logo-footer" alt="iNNOAnswers" />
           </a>
           <span className="brand__subheading">Enterprise AI Engineering</span>
           <h2 className="brand__title">Solving tough problems with AI</h2>
@@ -44,7 +44,6 @@ export function Footer() {
             <span>Talk to our team</span>
             <ArrowRight aria-hidden="true" />
           </a>
-          <p className="brand__copy">© 2026 Innoanswers Inc. · All rights reserved.</p>
         </div>
 
         {/* Column 2: Site Links */}
@@ -82,9 +81,6 @@ export function Footer() {
               <a href="/security">Security &amp; Compliance</a>
             </li>
             <li>
-              <a href="/#faq">Technical FAQ</a>
-            </li>
-            <li>
               <a href="/contact">Contact Us</a>
             </li>
           </ul>
@@ -116,6 +112,13 @@ export function Footer() {
             </li>
           </ul>
         </div>
+      </div>
+
+      {/* 5. Dedicated High-Contrast Bottom Bar */}
+      <div className="footer__bottom">
+        <p className="footer__copy">
+          © 2026 iNNOAnswers Inc. · All rights reserved.
+        </p>
       </div>
     </footer>
   );

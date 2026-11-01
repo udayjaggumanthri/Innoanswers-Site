@@ -8,8 +8,8 @@ import { Footer } from "../components/layout/Footer";
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Innoanswers — Solving tough problems with AI-driven solutions",
-    template: "%s | Innoanswers",
+    default: "iNNOAnswers — Solving tough problems with AI-driven solutions",
+    template: "%s | iNNOAnswers",
   },
   description: siteConfig.description,
   openGraph: {
@@ -17,12 +17,12 @@ export const metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Innoanswers — Solving tough problems with AI-driven solutions",
+    title: "iNNOAnswers — Solving tough problems with AI-driven solutions",
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Innoanswers — Solving tough problems with AI-driven solutions",
+    title: "iNNOAnswers — Solving tough problems with AI-driven solutions",
     description: siteConfig.description,
   },
 };
@@ -78,7 +78,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-[var(--bg)] text-[var(--ink)] selection:bg-[#7fd4ff]/30 selection:text-white transition-colors duration-200">
+      <body className="bg-[var(--bg)] text-[var(--ink)] transition-colors duration-200">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-black focus:shadow-lg focus:outline-2 focus:outline-[#7fd4ff]"

@@ -19,8 +19,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "About Innoanswers — Enterprise AI Engineering",
-  description: "Learn about Innoanswers, our mission, values, and how our team blends AI expertise with domain knowledge to deliver tangible business outcomes.",
+  title: "About iNNOAnswers — Enterprise AI Engineering",
+  description: "Learn about iNNOAnswers, our mission, values, and how our team blends AI expertise with domain knowledge to deliver tangible business outcomes.",
 };
 
 export default function AboutPage() {
@@ -35,7 +35,7 @@ export default function AboutPage() {
             <Reveal>
               <div className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 px-3.5 py-1 rounded-full bg-[var(--surface)] border border-[var(--border-subtle)] text-xs text-[var(--muted-text)] max-w-full text-center shadow-xs mx-auto">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-sky-400 shrink-0" />
-                <span className="uppercase tracking-wider font-bold text-[11px] text-[var(--ink)]">ABOUT INNOANSWERS</span>
+                <span className="tracking-wide font-bold text-[12px] text-[var(--ink)]">ABOUT iNNOAnswers</span>
                 <span className="opacity-40">·</span>
                 <span className="font-medium text-[11px] sm:text-xs">
                   Enterprise AI Engineering &amp; Applied Research
@@ -64,7 +64,7 @@ export default function AboutPage() {
                 <ThreeDCard className="w-full h-full rounded-2xl sm:rounded-3xl" maxTilt={5} scale={1.01}>
                   <CinematicImage
                     src="/images/about/team-collab.jpg"
-                    alt="Innoanswers AI engineering and strategy team collaborating"
+                    alt="iNNOAnswers AI engineering and strategy team collaborating"
                     aspectRatio="aspect-[16/10] sm:aspect-[16/9]"
                     threshold={0.15}
                     overlay={

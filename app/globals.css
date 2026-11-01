@@ -93,6 +93,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
   transition: background-color 200ms var(--ease-smooth), color 200ms var(--ease-smooth);
 }
 
@@ -221,5 +222,124 @@ button:focus-visible,
     min-height: 600px;
   }
 }
+/* Official Brand Logo Adaptive Theme Switching */
+.logo-dark-theme {
+  display: block !important;
+}
+.logo-light-theme {
+  display: none !important;
+}
 
+html.light .logo-dark-theme,
+html[data-theme="light"] .logo-dark-theme,
+body.light .logo-dark-theme {
+  display: none !important;
+}
 
+html.light .logo-light-theme,
+html[data-theme="light"] .logo-light-theme,
+body.light .logo-light-theme {
+  display: block !important;
+}
+
+/* Bulletproof responsive heights for BrandLogo across all devices */
+.brand-logo-header {
+  height: 34px;
+}
+@media (min-width: 480px) {
+  .brand-logo-header {
+    height: 38px;
+  }
+}
+@media (min-width: 640px) {
+  .brand-logo-header {
+    height: 42px;
+  }
+}
+@media (min-width: 1024px) {
+  .brand-logo-header {
+    height: 46px;
+  }
+}
+@media (min-width: 1280px) {
+  .brand-logo-header {
+    height: 50px;
+  }
+}
+
+.brand-logo-drawer {
+  height: 36px;
+}
+@media (min-width: 480px) {
+  .brand-logo-drawer {
+    height: 40px;
+  }
+}
+
+.brand-logo-footer {
+  height: 44px;
+}
+@media (min-width: 640px) {
+  .brand-logo-footer {
+    height: 52px;
+  }
+}
+@media (min-width: 1024px) {
+  .brand-logo-footer {
+    height: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .brand-logo-footer {
+    height: 66px;
+  }
+}
+
+/* ==========================================================================
+   Text Selection Styles - High-Contrast & Clearly Visible in Both Themes
+   ========================================================================== */
+::selection {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+::-moz-selection {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* In Dark Mode: Electric Blue with Pure White Text */
+html.dark ::selection,
+html[data-theme="dark"] ::selection,
+.dark ::selection {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+html.dark ::-moz-selection,
+html[data-theme="dark"] ::-moz-selection,
+.dark ::-moz-selection {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* In Light Mode: Deep Royal Blue with Pure White Text */
+html.light ::selection,
+html[data-theme="light"] ::selection,
+.light ::selection {
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+html.light ::-moz-selection,
+html[data-theme="light"] ::-moz-selection,
+.light ::-moz-selection {
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}

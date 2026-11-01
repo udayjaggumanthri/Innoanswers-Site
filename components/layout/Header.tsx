@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import { Wordmark } from "../hero/Wordmark";
+import { BrandLogo } from "../ui/BrandLogo";
 import { MobileMenu } from "./MobileMenu";
 import { ThemeToggle } from "../ui/ThemeToggle";
 
@@ -46,16 +46,13 @@ export function Header({ currentPath = "/" }: HeaderProps) {
         }`}
       >
         <div className="flex items-center justify-between w-full">
-          {/* Brand Logo & Wordmark */}
+          {/* Brand Official Logo */}
           <a
             href="/"
-            aria-label="Innoanswers home"
-            className="flex items-center gap-2.5 text-slate-900 dark:text-white group"
+            aria-label="iNNOAnswers home"
+            className="inline-flex items-center group transition-transform duration-200 hover:scale-[1.02] focus-visible:outline-2 focus-visible:outline-blue-600 rounded-lg shrink-0"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-[var(--accent)] dark:to-blue-600 text-white dark:text-[#030718] font-bold text-sm shadow-sm shadow-blue-500/20 dark:shadow-[var(--accent)]/20 transition-transform group-hover:scale-105">
-              <span>IA</span>
-            </div>
-            <Wordmark heightPx={21} />
+            <BrandLogo className="brand-logo-header" alt="iNNOAnswers" />
           </a>
 
           {/* Desktop Navigation Links with pristine light & dark mode styles */}

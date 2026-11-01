@@ -4,7 +4,7 @@ import { Container } from "../../components/ui/Container";
 import { Reveal } from "../../components/ui/Reveal";
 
 export const metadata = {
-  title: "Security & Compliance — Innoanswers Inc.",
+  title: "Security & Compliance — iNNOAnswers Inc.",
   description:
     "Enterprise security posture, private cloud VPC isolation, SOC 2 Type II compliance, HIPAA readiness, and EU AI Act governance architectures.",
 };

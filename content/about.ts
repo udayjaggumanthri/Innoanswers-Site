@@ -37,10 +37,10 @@ export interface AboutContent {
 }
 
 export const aboutContent: AboutContent = {
-  eyebrow: "About Innoanswers",
+  eyebrow: "About iNNOAnswers",
   homeH2: "Technology that tackles real-world problems.",
   pageH1: "A team that turns tough problems into working solutions.",
-  body: "At Innoanswers, we thrive on using technology to tackle tough real-world problems. Our team blends AI expertise with industry knowledge to deliver solutions that result in tangible business benefits. No jargon — just results.",
+  body: "At iNNOAnswers, we thrive on using technology to tackle tough real-world problems. Our team blends AI expertise with industry knowledge to deliver solutions that result in tangible business benefits. No jargon — just results.",
   pillars: [
     {
       title: "AI expertise",

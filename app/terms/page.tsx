@@ -4,9 +4,9 @@ import { Container } from "../../components/ui/Container";
 import { Reveal } from "../../components/ui/Reveal";
 
 export const metadata = {
-  title: "Terms & Conditions — Innoanswers Inc.",
+  title: "Terms & Conditions — iNNOAnswers Inc.",
   description:
-    "Enterprise terms of service, engagement agreements, intellectual property ownership, and service level assurances for Innoanswers clients.",
+    "Enterprise terms of service, engagement agreements, intellectual property ownership, and service level assurances for iNNOAnswers clients.",
 };
 
 export default function TermsPage() {
@@ -67,7 +67,7 @@ export default function TermsPage() {
                   1. Acceptance of Terms
                 </h2>
                 <p>
-                  By accessing our website or engaging Innoanswers Inc. for custom software development, machine learning engineering, or AI consulting services, you agree to be bound by these Terms &amp; Conditions and any accompanying Master Services Agreement (MSA) or Statement of Work (SOW).
+                  By accessing our website or engaging iNNOAnswers Inc. for custom software development, machine learning engineering, or AI consulting services, you agree to be bound by these Terms &amp; Conditions and any accompanying Master Services Agreement (MSA) or Statement of Work (SOW).
                 </p>
               </div>
             </Reveal>
@@ -78,7 +78,7 @@ export default function TermsPage() {
                   2. Scope of Services &amp; Deliverables
                 </h2>
                 <p>
-                  Services delivered by Innoanswers Inc. include Technology Services (ML/AI engineering), Business Services (process automation), and AI Consulting (strategic advisory). Specific technical requirements, milestones, acceptance criteria, and SLAs are defined in individual SOWs executed between the parties.
+                  Services delivered by iNNOAnswers Inc. include Technology Services (ML/AI engineering), Business Services (process automation), and AI Consulting (strategic advisory). Specific technical requirements, milestones, acceptance criteria, and SLAs are defined in individual SOWs executed between the parties.
                 </p>
               </div>
             </Reveal>
@@ -89,7 +89,7 @@ export default function TermsPage() {
                   3. Intellectual Property Ownership
                 </h2>
                 <p>
-                  Unlike SaaS platforms that retain control over model weights and fine-tuned artifacts, Innoanswers operates under a total work-for-hire model:
+                  Unlike SaaS platforms that retain control over model weights and fine-tuned artifacts, iNNOAnswers operates under a total work-for-hire model:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-sm">
                   <li><strong>Client IP:</strong> All client data, proprietary domain knowledge, and custom model weights remain 100% owned by the client.</li>
@@ -105,7 +105,7 @@ export default function TermsPage() {
                   4. Warranties &amp; Service Level Agreements (SLAs)
                 </h2>
                 <p>
-                  Innoanswers warrants that all engineering deliverables will be constructed in a professional manner adhering to modern software engineering standards. For clients subscribing to ongoing SLA maintenance, we guarantee 99.95% uptime for deployed private VPC microservices and sub-24h ticket response times.
+                  iNNOAnswers warrants that all engineering deliverables will be constructed in a professional manner adhering to modern software engineering standards. For clients subscribing to ongoing SLA maintenance, we guarantee 99.95% uptime for deployed private VPC microservices and sub-24h ticket response times.
                 </p>
               </div>
             </Reveal>
@@ -120,7 +120,7 @@ export default function TermsPage() {
                 </p>
                 <div className="p-5 rounded-xl border border-[var(--border-subtle)] bg-[var(--surface)] text-xs sm:text-sm space-y-1 font-mono">
                   <p className="font-bold text-[var(--ink)] font-sans">Legal &amp; Contracts Department</p>
-                  <p>Innoanswers Inc.</p>
+                  <p>iNNOAnswers Inc.</p>
                   <p>Email: legal@innoanswers.com</p>
                   <p>Phone: +1 (800) 555-0199</p>
                 </div>

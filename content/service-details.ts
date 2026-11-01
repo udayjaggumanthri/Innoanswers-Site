@@ -439,7 +439,7 @@ export const serviceDetailsData: Record<string, ServiceDetailPageData> = {
     ],
     faqs: [
       {
-        question: "Is Innoanswers affiliated with specific AI vendors or cloud providers?",
+        question: "Is iNNOAnswers affiliated with specific AI vendors or cloud providers?",
         answer: "No. We are 100% independent. We do not accept reseller commissions or kickbacks from cloud vendors or software providers. Our advice is governed entirely by what provides the highest ROI for your business.",
       },
       {

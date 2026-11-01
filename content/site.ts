@@ -23,7 +23,7 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Innoanswers",
+  name: "iNNOAnswers",
   tagline: "Solving tough problems with AI-driven solutions.",
   description: "AI expertise meets industry knowledge. Practical, outcome-focused AI solutions with no jargon — just results.",
   url: "https://innoanswers.com",
